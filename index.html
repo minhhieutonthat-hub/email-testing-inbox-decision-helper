@@ -1,36 +1,48 @@
-<div class="helper">
-  <h1>Email Testing Inbox Decision Helper</h1>
-  <p class="intro">
-    Pick the right inbox type for common webmaster, marketing, and QA email testing workflows.
-  </p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email Testing Inbox Decision Helper</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="helper">
+    <h1>Email Testing Inbox Decision Helper</h1>
+    <p class="intro">
+      Pick the right inbox type for common webmaster, marketing, and QA email testing workflows.
+    </p>
 
-  <label for="workflow">Choose a workflow:</label>
-  <select id="workflow">
-    <option value="newsletter">Newsletter signup / lead magnet</option>
-    <option value="contact">Website contact form test</option>
-    <option value="transactional">Low-risk transactional email test</option>
-    <option value="trial">SaaS or product evaluation</option>
-    <option value="client">Client, billing, or business account</option>
-    <option value="recovery">Account recovery / long-term login</option>
-    <option value="sensitive">Banking, healthcare, crypto, or government service</option>
-  </select>
+    <label for="workflow">Choose a workflow:</label>
+    <select id="workflow">
+      <option value="newsletter">Newsletter signup / lead magnet</option>
+      <option value="contact">Website contact form test</option>
+      <option value="transactional">Low-risk transactional email test</option>
+      <option value="trial">SaaS or product evaluation</option>
+      <option value="client">Client, billing, or business account</option>
+      <option value="recovery">Account recovery / long-term login</option>
+      <option value="sensitive">Banking, healthcare, crypto, or government service</option>
+    </select>
 
-  <button id="checkBtn">Check recommendation</button>
+    <button id="checkBtn">Check recommendation</button>
 
-  <div id="output" class="output">
-    Select a workflow and click the button.
+    <div id="output" class="output">
+      Select a workflow and click the button.
+    </div>
+
+    <div class="warning">
+      <strong>Safety boundary:</strong> temporary inboxes are only suitable for short-lived,
+      low-risk, receive-only workflows. Do not use them for accounts where recovery,
+      billing, identity, or permanent access matters.
+    </div>
+
+    <p class="source">
+      Related use cases:
+      <a href="https://smailpro.com/use-cases" target="_blank" rel="noopener">
+        SmailPro receive-only inbox workflows
+      </a>
+    </p>
   </div>
-
-  <div class="warning">
-    <strong>Safety boundary:</strong> temporary inboxes are only suitable for short-lived,
-    low-risk, receive-only workflows. Do not use them for accounts where recovery,
-    billing, identity, or permanent access matters.
-  </div>
-
-  <p class="source">
-    Related use cases:
-    <a href="https://smailpro.com/use-cases" target="_blank" rel="noopener">
-      SmailPro receive-only inbox workflows
-    </a>
-  </p>
-</div>
+</body>
+</html>
